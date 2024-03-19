@@ -1,0 +1,5 @@
+UPDATE partner SET
+		name = '{{update_form.fieldState.name.isVisible ? update_form.formData.name : update_form.sourceData.name}}',
+		address = '{{update_form.fieldState.address.isVisible ? update_form.formData.address : update_form.sourceData.address}}',
+    type = '{{update_form.fieldState.type.isVisible ? update_form.formData.type : update_form.sourceData.type}}'
+WHERE id = {{partner_data.selectedRow.id}};

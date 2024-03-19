@@ -1,0 +1,5 @@
+SELECT * FROM contact
+WHERE email like '%{{contact_data.searchText || ""}}%'
+ORDER BY {{contact_data.sortOrder.column || 'id'}} {{contact_data.sortOrder.order || "ASC"}}
+LIMIT {{contact_data.pageSize}}
+OFFSET {{(contact_data.pageNo - 1) * contact_data.pageSize}};

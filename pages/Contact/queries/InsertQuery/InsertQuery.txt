@@ -1,0 +1,14 @@
+INSERT INTO contact (
+	id,
+	email,
+	firstname,
+	lastname,
+	telephone,
+	partner_id)
+VALUES (
+	'{{insert_contact.formData.id}}',
+	'{{insert_contact.formData.email}}',
+	'{{insert_contact.formData.firstname}}',
+	'{{insert_contact.formData.lastname}}',
+	'{{insert_contact.formData.telephone}}',
+	'{{insert_contact.formData.partner_id}}');

@@ -1,0 +1,9 @@
+INSERT INTO partner (
+	name,
+	address,
+	type)
+VALUES (
+	'{{insert_partner.formData.name}}',
+	'{{insert_partner.formData.address}}',
+	'{{insert_partner.formData.type}}'
+);

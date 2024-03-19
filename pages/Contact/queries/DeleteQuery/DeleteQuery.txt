@@ -1,0 +1,2 @@
+DELETE FROM contact
+  WHERE id = {{contact_data.triggeredRow.id}};

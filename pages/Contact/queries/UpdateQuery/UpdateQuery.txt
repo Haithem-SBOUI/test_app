@@ -1,0 +1,7 @@
+UPDATE contact SET
+		email = '{{update_form.fieldState.email.isVisible ? update_form.formData.email : update_form.sourceData.email}}',
+		firstname = '{{update_form.fieldState.firstname.isVisible ? update_form.formData.firstname : update_form.sourceData.firstname}}',
+    lastname = '{{update_form.fieldState.lastname.isVisible ? update_form.formData.lastname : update_form.sourceData.lastname}}',
+		telephone = '{{update_form.fieldState.telephone.isVisible ? update_form.formData.telephone : update_form.sourceData.telephone}}',
+		partner_id = '{{update_form.fieldState.partner_id.isVisible ? update_form.formData.partner_id : update_form.sourceData.partner_id}}'
+WHERE id = {{data_table.selectedRow.id}};
